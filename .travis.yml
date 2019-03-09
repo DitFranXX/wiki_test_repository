@@ -1,0 +1,11 @@
+language: minimal
+deploy:
+- provider: pages
+  local-dir: wiki
+  target-branch: master
+  repo: DitFranXX/wiki_test_repository.wiki.git
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN # replace to secure?
+  on:
+    branch: master
